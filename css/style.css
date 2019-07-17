@@ -1,0 +1,287 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+}
+
+footer , .nav-link {
+  font-family: 'Merienda One', cursive;
+}
+
+@media (min-width: 768px) {
+  .carousel-multi-item-2 .col-md-3 {
+  float: left;
+  width: 25%;
+  max-width: 50%; } }
+  
+  .carousel-multi-item-2 .card img {
+  border-radius: 50%; 
+}
+
+#multi-item-example{
+  transition-duration: 2ms;
+  background-image: url("C://Users/MohamedWael/Desktop/Work/StarFive/Star5/pics/body-of-water-nature-ocean-2439625.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*Now the styles*/
+* {
+  margin: 0; 
+padding: 0;
+}
+body {
+
+font-family: arial, verdana, tahoma;
+}
+
+/*Time to apply widths for accordian to work
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+.accordian {
+width:100%; height: 320px;
+overflow: hidden;
+
+
+/*Time for some styling*/
+margin: 100px ;
+padding-left: 150px;
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+width: 1500px;
+/*This will give ample space to the last item to move
+instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+position: relative;
+display: block;
+width: 100px;
+float: left;
+
+border-left: 1px solid #888;
+
+box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+
+/*Transitions to give animation effect*/
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+/*If you hover on the images now you should be able to 
+see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 40px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {width: 640px;}
+
+
+.accordian li img {
+display: block;
+}
+
+/*Image title styles*/
+.image_title {
+background: rgba(0, 0, 0, 0.5);
+position: absolute;
+left: 0; bottom: 0;	
+width: 640px;	
+
+}
+.image_title a {
+display: block;
+color: #fff;
+text-decoration: none;
+padding: 20px;
+font-size: 16px;
+}
+
+#hotels{
+transition-duration: 0.4ms;
+  padding-top: 150px;
+
+  background-image: url("C://Users/MohamedWael/Desktop/Work/StarFive/Star5/pics/beach-calm-clouds-457881.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h3{
+  font-family: 'Pacifico', cursive;
+
+}
+
+a {color: #000;}
+
+a:link{text-decoration:none;}
+
+#contact2{
+    letter-spacing:3px;
+}
+
+
+
+#author a{
+  color: #fff;
+  text-decoration: none;
+    
+}
+
+#contact{
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  padding-top: 150px;
+  padding-right: 150px;
+  padding-bottom: 150px;
+  background-image: url('C://Users/MohamedWael/Desktop/Work/StarFive/Star5/pics/access-adult-blur-261628.jpg');
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 70%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+.fa-google {
+  background: black;
+  color: white;
+}
+
+.fa-linkedin {
+  background: black;
+  color: white;
+}
+
+.fa-vk{
+  background: black;
+  color: white;
+}
+
+
+
+.testimonial-box{
+  border: 1px solid black;
+  padding:80px;;
+  border-radius: 50%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-image: url("C:/Users/MohamedWael/Desktop/Work/StarFive/Star5/pics/blank-chalks-coloured-pencil-159686.jpg");
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonial-box img {
+  display: inline-block;
+  width: 90px;
+  height:90px;
+  border-radius: 50%;
+
+
+}
+.testimonial-box h4 {
+  color:#3f4940;
+}
+.testimonial-box p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 400;
+}
+.ratings-icons {
+  color: #fec42d;
+  margin-bottom: 15px;
+}
+
+.fa.fa-star{
+  padding:5px;
+  margin-left: 0%;
+  margin-right: 0%;
+
+}
+
+.testimonial-box i{
+  color:#3f4940;
+  font-weight: 900;
+}
+
+#feedback{
+  background-color: #000;
+  background-image: url("C:/Users/MohamedWael/Desktop/Work/StarFive/Star5/pics/blackboard-chalk-chalkboard-533425.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card{
+  border:0;
+  background-color: transparent;
+}
+
